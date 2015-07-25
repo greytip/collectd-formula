@@ -134,4 +134,4 @@
 {% do default_settings.collectd.update(os_map) %}
 
 {# Update settings defaults from pillar data #}
-{% set collectd_settings = salt['pillar.get']('collectd', default=default_settings.collectd, , merge=True) %}
+{% set collectd_settings = salt['pillar.get']('collectd', default=default_settings.collectd, merge=True) %}
